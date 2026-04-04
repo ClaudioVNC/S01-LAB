@@ -1,5 +1,3 @@
--- Exercicio: tabuada de X no intervalo de M ate N
-
 io.write("Digite o valor de M (inicio do intervalo): ")
 local M = tonumber(io.read())
 

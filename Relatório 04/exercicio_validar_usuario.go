@@ -7,7 +7,6 @@ import (
 	"strings"
 )
 
-// ValidarUsuario verifica se o nome de usuário tem pelo menos 8 caracteres
 func ValidarUsuario(nome string) (bool, string) {
 	if len(nome) >= 8 {
 		return true, "Usuário criado com sucesso!"

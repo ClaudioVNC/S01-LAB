@@ -1,6 +1,4 @@
-% === Flora do Pantanal - Exercicio 3 ===
 
-% --- Fatos: alimentacao de plantas e algas ---
 alimentado_por(vitoria_regia,  sol).
 alimentado_por(vitoria_regia,  terra).
 alimentado_por(vitoria_regia,  agua).
@@ -16,8 +14,6 @@ alimentado_por(taboa,          terra).
 alimentado_por(musgo,          sol).
 alimentado_por(musgo,          agua).
 
-% Exercicio 3.1: Regra competidores_diretos(A, B)
-% Verdadeira SE A e B se alimentam do Sol E tambem da Terra, e A \= B
 competidores_diretos(A, B) :-
     alimentado_por(A, sol),
     alimentado_por(A, terra),
@@ -25,7 +21,6 @@ competidores_diretos(A, B) :-
     alimentado_por(B, terra),
     A \= B.
 
-% Exercicio 3.2: Query - Quais plantas ou algas sao competidoras diretas?
 :- initialization(main, main).
 
 main :-

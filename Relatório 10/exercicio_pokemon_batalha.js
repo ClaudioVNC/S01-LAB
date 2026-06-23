@@ -40,7 +40,6 @@ class Charizard extends Pokemon {
     }
 }
 
-// Main
 const pikachu = new Pikachu();
 const charizard = new Charizard();
 
@@ -50,5 +49,5 @@ charizard.atacar();
 charizard.receberDano(40);
 console.log(`Vida atual de ${charizard.nome}: ${charizard.vida}`);
 
-pikachu.receberDano(120); // tenta causar mais dano do que a vida disponível
+pikachu.receberDano(120);
 console.log(`Vida atual de ${pikachu.nome}: ${pikachu.vida}`);

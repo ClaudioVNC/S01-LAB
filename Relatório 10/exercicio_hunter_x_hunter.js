@@ -1,4 +1,3 @@
-// Classe base
 class Hunter {
     constructor(nome) {
         this.nome = nome;
@@ -9,7 +8,6 @@ class Hunter {
     }
 }
 
-// Herança e Sobrescrita
 class Gon extends Hunter {
     constructor() {
         super("Gon");
@@ -40,7 +38,6 @@ class Kurapika extends Hunter {
     }
 }
 
-// Agregação
 class TrupeFantasma {
     constructor(nome, membros) {
         this.nome = nome;
@@ -55,7 +52,6 @@ class TrupeFantasma {
     }
 }
 
-// Main
 const gon = new Gon();
 const killua = new Killua();
 const kurapika = new Kurapika();

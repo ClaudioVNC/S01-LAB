@@ -1,4 +1,3 @@
-// Interface simulada
 class Habilidade {
     usar() {
         throw new Error("O método usar() deve ser sobrescrito pela subclasse.");
@@ -29,7 +28,6 @@ class Armadilha extends Habilidade {
     }
 }
 
-// Composição
 class Agente {
     constructor(nome, funcao, habilidade) {
         this.nome = nome;
@@ -43,7 +41,6 @@ class Agente {
     }
 }
 
-// Main
 const omen = new Agente("Omen", "Controlador", new Smoke());
 const phoenix = new Agente("Phoenix", "Duelista", new Flash());
 const jett = new Agente("Jett", "Duelista", new Dash());

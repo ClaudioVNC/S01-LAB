@@ -1,4 +1,3 @@
-// Composição
 class Criatura {
     constructor(nome, perigo) {
         this.nome = nome;
@@ -24,7 +23,6 @@ class Diario {
     }
 }
 
-// Agregação
 class Personagem {
     constructor(nome) {
         this.nome = nome;
@@ -44,7 +42,6 @@ class CabanaMisterio {
     }
 }
 
-// Main
 const diario = new Diario();
 
 const gnomo = new Criatura("Gnomo", "Médio");

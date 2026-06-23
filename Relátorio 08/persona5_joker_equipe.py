@@ -17,10 +17,8 @@ class PhantomThieves:
 
 class Joker:
     def __init__(self, nome_arma: str, equipe: list[PhantomThieves]):
-        # Composicao: a arma e criada e gerenciada internamente por Joker.
         self.arma = ArmaCorpoACorpo(nome_arma)
 
-        # Agregacao: Joker recebe a lista externa de membros da equipe.
         self.equipe = equipe
 
     def mostrar_equipe(self) -> None:

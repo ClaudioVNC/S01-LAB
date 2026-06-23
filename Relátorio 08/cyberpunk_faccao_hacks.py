@@ -19,7 +19,6 @@ class Implante:
 class NetRunner(Cibernetico):
     def __init__(self, nome: str, custo_implante: int, funcao_implante: str):
         self.nome = nome
-        # Composicao: o implante e criado e gerenciado internamente pelo NetRunner.
         self.implante = Implante(custo_implante, funcao_implante)
 
     def realizar_hack(self) -> None:
@@ -31,7 +30,6 @@ class NetRunner(Cibernetico):
 
 class Faccao:
     def __init__(self, membros: list[Cibernetico]):
-        # Agregacao: recebe objetos Cibernetico criados externamente.
         self.membros = membros
 
     def adicionar_membro(self, membro: Cibernetico) -> None:
